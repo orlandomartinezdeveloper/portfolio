@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cabin Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    background: #CB2F09;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+    z-index: 10;
+}
+
+.text-logo {
+    padding-left: 25px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.text-logo h2 {
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* MOBILE FIRST */
+
+.nav-list {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    list-style: none;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #07214b;
+    transition: .5s ease;
+    z-index: 10;
+}
+
+.nav-list li {
+    padding-top: 25px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.nav-list a:hover {
+    color:#F6ED5E;
+}
+
+.hamburguer-btn {
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+#check:checked~ .nav-list {
+    height: 100vh;
+}
+
+#check:checked~ .nav-list a{
+    opacity: 1;
+}
+
+.background-principal {
+    top: 100px;
+    height: 35vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-image: url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    box-shadow: 3px 0px 5px #010c16;
+}
+
+.fotoMia {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top:15vh;
+    justify-content: center;
+    z-index: 0;
+}
+
+.fotoMia img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px #010c16;
+}
+
+.principal {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-top: 30px;
+    font-size: 2em;
+}
+
+.conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textoGR {
+    display: flex;
+    justify-content: center;
+}
+
+.textoG {
+    margin-top: 25px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    width: 90%;
+}
+
+.textoM {
+    text-align: center;
+}
+
+.sobre {
+    background: #d2e3ff;
+}
+
+@media only screen and (min-width:1024px) {
+    .hamburguer-btn {
+        display:none;
+    }
+
+    .nav-list li {
+        padding: 0 25px 0 0;
+    }
+
+    .nav-list a{
+        opacity: 1;
+    }
+
+    .nav-list {
+        top: 50px;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-content: center;
+    }
+
+    .fotoMia {
+        margin-left: -40vh;
+        top: 23vh;
+    }
+
+    .fotoMia img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .textoG, .textoM {
+        text-align: left;
+    }
+
+    .textoG {
+        width: 50%;
+        margin-left: 30%;
+    }
+
+    .textoGM {
+        width: 50%;
+        margin-left: 30%;
+    }
+
+
+
+}
