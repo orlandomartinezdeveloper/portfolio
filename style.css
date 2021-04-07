@@ -21,20 +21,22 @@ nav {
     z-index: 10;
 }
 
-.text-logo {
-    padding-left: 25px;
-}
-
 .checkbox {
     display: none;
 }
 
-.text-logo h2 {
-    letter-spacing: 1px;
-    font-weight: 500;
+.logo img{
+    width: 50px;
+    border-radius: 50%;
+    border: 10px #d2e3ff;
+    margin-left: 25px;
+    border: #d2e3ff 1px solid;
 }
 
 /* MOBILE FIRST */
+.home {
+    padding: 12px 0 25px 0;
+}
 
 .nav-list {
     height: 0;
@@ -58,6 +60,7 @@ nav {
     text-decoration: none;
     color: #fff;
     opacity: 0;
+    display: none;
     transition: .3s ease;
 }
 
@@ -76,6 +79,7 @@ nav {
 
 #check:checked~ .nav-list a{
     opacity: 1;
+    display: flex;
 }
 
 .background-principal {
@@ -89,42 +93,45 @@ nav {
     box-shadow: 3px 0px 5px #010c16;
 }
 
-.fotoMia {
+.perfil {
     position: absolute;
     width: 100%;
     display: flex;
-    top:15vh;
+    top:150px;
     justify-content: center;
     z-index: 0;
 }
 
 .fotoMia img{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     box-shadow: 3px 3px 5px #010c16;
+    border: #d2e3ff 3px solid;
 }
 
 .principal {
-    height: 40vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 2em;
 }
 
 .conteudo {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .textoGR {
     display: flex;
     justify-content: center;
+
 }
 
 .textoG {
@@ -133,6 +140,7 @@ nav {
     width: 100%;
     text-align: center;
     width: 90%;
+
 }
 
 .textoM {
@@ -143,7 +151,195 @@ nav {
     background: #d2e3ff;
 }
 
-@media only screen and (min-width:1024px) {
+.logo {
+    width: 100%;
+    display: flex;
+}
+
+.formacao {
+    width: 100%;
+    background: #d4e4fd;
+    display: flex;
+    justify-content: center;
+}
+
+.experiencia {
+    width: 100%;
+    background: #2d3042;
+    display: flex;
+    justify-content: center;
+    color:rgb(236, 236, 236);
+}
+
+aside {
+    background: #d4e4fd;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 0 15px 0;
+}
+
+.linha-exp {
+    border-left: thick solid #fff;
+    width: 5px;
+    height: 75px;
+    border-radius: 40px;
+}
+
+.sub-formacao {
+    width: 100%;
+    padding: 20px 75px 20px 75px;
+}
+
+.estudos, .trabalhos {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.estudosConteudo, .trabalhosConteudo {
+    padding-left: 15px;
+}
+
+.linha {
+    border-left: thick solid #010c16;
+    width: 5px;
+    height: 75px;
+    border-radius: 40px;
+}
+
+.universidade, h4 {
+    font-size: 12px;
+}
+
+.network {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    margin-top: 130px;
+}
+
+.networkText {
+    font-size: 10px;
+    text-shadow: -1px -1px rgb(173, 172, 172);
+}
+
+.network img {
+    height: 2em;
+    margin: 0px 2px;
+    border-radius: 100%;
+    border: #d2e3ff 1px solid;
+}
+
+.textoGM {
+    margin-top: 40px;
+}
+
+.textoMP {
+    font-size: 25px;
+    text-align: center;
+}
+
+.textoM {
+    font-size: 20px
+}
+
+.sub-formacaoP {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projetoCada {
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.linkExterno {
+    background: #ff5d48;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+.descriTrabalhos {
+    padding-bottom: 15px;
+}
+
+footer {
+    background: #2d3042;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    color:#fff;
+}
+
+.contato {
+    width: 50%;
+
+}
+
+@media only screen and (min-width:768px){
+    .home {
+        padding: 0 0 25px 0;
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+    }
+    .textoGM {
+        margin-top: 0px;
+    }
+
+    .textoMP {
+        padding-top: 10px;
+        font-size: 37px;
+    }
+
+    .textoM {
+        font-size: 32px
+    }
+
+    .projetoCada {
+        width: 250px;
+        box-shadow: 3px 3px 7px #000;
+    }
+}
+
+@media only screen and (min-width:1025px) {
+    .home {
+        padding: 0 0 25px 0;
+    }
+    
+    .logo img {
+        margin-left: 15vh;
+    }
+    
     .hamburguer-btn {
         display:none;
     }
@@ -154,6 +350,7 @@ nav {
 
     .nav-list a{
         opacity: 1;
+        display: flex;
     }
 
     .nav-list {
@@ -161,11 +358,16 @@ nav {
         flex-direction: row;
         justify-content: flex-end;
         align-content: center;
+        right: 30vh;
     }
 
-    .fotoMia {
+    .perfil {
         margin-left: -40vh;
         top: 23vh;
+    }
+
+    .network {
+        margin-top: 235px;
     }
 
     .fotoMia img {
@@ -173,8 +375,16 @@ nav {
         width: 250px;
     }
 
-    .textoG, .textoM {
+    .principal {
+        height: auto;
+    }
+
+    .textoG, .textoM, .textoMP {
         text-align: left;
+    }
+
+    .textoMP {
+        padding-top: 0;
     }
 
     .textoG {
@@ -183,10 +393,22 @@ nav {
     }
 
     .textoGM {
+        margin-top:0;
         width: 50%;
         margin-left: 30%;
     }
 
+    .textoGR {
+        padding-bottom: 15px;
+    }
 
+    .sub-formacao {
+        width: 40%;
+        padding: 20px 0px;
+    }
+   
+    .estudos {
+        width: 100%;
+    }
 
 }
