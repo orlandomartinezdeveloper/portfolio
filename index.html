@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header Menu: Logo - Home - Sobre - Serviços - Contato -->
+        <!-- Header -->
         <header>
             <nav>
                 <div class="logo"><img src="img/foto-carnet.jpg" alt="Foto de Orlando"></div>
@@ -18,20 +18,26 @@
                 <label for="check" class="hamburguer-btn"><span class="fas fa-bars"></span></label>              
                 <ul class="nav-list">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Formação</a></li>
-                    <li><a href="#serviços">Experiência</a></li>
-                    <li><a href="#portfolio">Projetos</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </header>
-        <!-- Main: Home - Sobre - Serviços -->
-        <main>
+        <!-- Main -->
+        <main id="home">
             <section class="home">
                 <div class="background-principal"></div>
                 <div class="perfil">
                     <div class="fotoMia"><img src="img/foto-carnet.jpg" alt="Foto de Orlando"></div>
-                    <div class="network"><div class="github"><img src="img/github.png" alt="Github"><p class="networkText">GITHUB</p></div><div class="linkedin"><img src="img/linkedin.png" alt="Linkedin"><p class="networkText">LINKEDIN</p></div></div>
+                        <div class="network"><div class="github">
+                            <a href="https://github.com/orlandomartinezdeveloper" target="_blank"><img src="img/github.png" alt="Github"></a>
+                            <p class="networkText">GITHUB</p>
+                        </div>
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/in/orlandomartinez2018/" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
+                            <p class="networkText">LINKEDIN</p></div></div>
                 </div>
                 <article class="principal">
                     <div class="conteudo">
@@ -44,7 +50,7 @@
                     </div>
                 </article>
             </section>
-            <section class="formacao">
+            <section class="formacao" id="formacao">
                 <div class="sub-formacao">
                     <h2>Formação</h2>
                     <article class="estudos">
@@ -98,7 +104,7 @@
                     </article>
                 </div>       
             </section>
-            <section class="experiencia">
+            <section class="experiencia" id="experiencia">
                 <div class="sub-formacao">
                     <h2>Experiência</h2>
                     <article class="trabalhos">
@@ -144,7 +150,8 @@
                 </div>       
             </section>
         </main>
-        <aside>
+        <!-- Aside -->
+        <aside id="projetos">
             <div class="sub-formacaoP">
                 <h2 class="projetoTitulo">Projetos</h2>
                 <section class="projetos">
@@ -169,9 +176,19 @@
                 </section>
             </div>
         </aside>
-        <!-- Footer: Contato e Copyright -->
-        <footer>
+        <!-- Footer -->
+        <footer id="contato">
             <section class="contato">
+                <section class="textContact">
+                    <h2>Contato</h2>
+                    <p>Quer entrar em contato comigo?</p>
+                    <p>Preencha o formulário e entrarei em contato o mais rápido possível.</p>
+                    <p>Você também pode me encontrar nas seguintes redes sociais:</p>
+                    <div class="redes-sociais">
+                        <a href="www.instagram.com/orlandomartinezdeveloper"><img src="/img/instagram-logo.png" alt="instagram" class="instagram"></a>
+                        <a href="www.facebook.com/omjunior"><img src="/img/facebook-logo.png" alt="facebook" class="facebook"></a>
+                    </div>
+                </section>
                 <form action="" method="post" class="formulario">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name ="nome" placeholder="Escreva seu nome" required>
@@ -179,7 +196,7 @@
                     <input type="email" id="email" name ="email" placeholder="Escreva seu email" required>
                     <label for="email">Qual serviço precisa?</label>
                     <textarea name="text" id="text" cols="30" rows="10"></textarea>
-                    <button type="submit">Enviar</button>
+                    <div class="styleEnviar"><button type="submit">ENVIAR</button></div>
                 </form>
             </section>
             <section class="copy">
