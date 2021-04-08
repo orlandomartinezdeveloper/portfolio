@@ -281,6 +281,10 @@ aside {
     padding: 5px;
 }
 
+.linkExterno:hover {
+    background: #07214b;
+}
+
 .descriTrabalhos {
     padding-bottom: 15px;
 }
