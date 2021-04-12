@@ -18,11 +18,11 @@
                 <input type="checkbox" name="check" id="check" class="checkbox">
                 <label for="check" class="hamburguer-btn"><span class="fas fa-bars"></span></label>              
                 <ul class="nav-list">
-                    <li><a href="#home" onclick = "fechar();">Home</a></li>
-                    <li><a href="#formacao" onclick = "fechar();">Formação</a></li>
-                    <li><a href="#experiencia" onclick = "fechar();">Experiência</a></li>
-                    <li><a href="#projetos" onclick = "fechar();">Projetos</a></li>
-                    <li><a href="#contato" onclick = "fechar();">Contato</a></li>
+                    <li><a href="#home" onclick = "fechar();" class="linkMenu">Home</a></li>
+                    <li><a href="#formacao" onclick = "fechar();" class="linkMenu">Formação</a></li>
+                    <li><a href="#experiencia" onclick = "fechar();" class="linkMenu">Experiência</a></li>
+                    <li><a href="#projetos" onclick = "fechar();" class="linkMenu">Projetos</a></li>
+                    <li><a href="#contato" onclick = "fechar();" class="linkMenu">Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -190,14 +190,15 @@
                         <a href="http://www.facebook.com/omjunior"><img src="img/facebook-logo.png" alt="facebook" class="facebook"></a>
                     </div>
                 </section>
-                <form action="" method="post" class="formulario">
+                <form action="#" method="post" class="formulario">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name ="nome" placeholder="Escreva seu nome" required>
+                    <input type="text" id="nome" name ="nome" placeholder="Escreva seu nome" >
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name ="email" placeholder="Escreva seu email" required>
+                    <input type="email" id="email" name ="email" placeholder="Escreva seu email" >
                     <label for="email">Qual serviço precisa?</label>
-                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
-                    <div class="styleEnviar"><button type="submit">ENVIAR</button></div>
+                    <textarea name="text" id="text" cols="30" rows="10" ></textarea>
+                    <div class="styleEnviar"><button type="submit" >ENVIAR</button></div>
+                    <p id="mensageNome"></p>
                 </form>
             </section>
             <section class="copy">
