@@ -271,7 +271,7 @@ aside {
     width: 100%;
     padding: 25px;
     background: #2d3042;
-    margin-right: 15px;
+    margin-right: 0px;
     display: flex;
     flex-direction: column;
     margin-top: 15px;
@@ -412,6 +412,10 @@ label {
     .projetoCada {
         width: 250px;
         box-shadow: 3px 3px 7px #000;
+    }
+
+    .projetoCada {
+        margin-right: 15px;
     }
 
 }
