@@ -267,24 +267,36 @@ aside {
 }
 
 .projetoCada {
+    color: #fff;
     width: 100%;
-    padding: 15px;
-    background: #fff;
+    padding: 25px;
+    background: #2d3042;
     margin-right: 15px;
     display: flex;
     flex-direction: column;
     margin-top: 15px;
+    border-radius: 10px;
+}
+
+.fotoProjetoCada {
+    border-radius: 50px;
+}
+
+.titleCada {
+    padding-top: 10px;
 }
 
 .linkExterno {
     background: #ff5d48;
     text-decoration: none;
     color: #fff;
-    padding: 5px;
+    padding: 7px;
+    border-radius: 10px;
 }
 
 .linkExterno:hover {
-    background: #07214b;
+    background: #F6ED5E;
+    color: #000;
 }
 
 .descriTrabalhos {
