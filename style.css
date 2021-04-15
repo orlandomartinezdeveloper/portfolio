@@ -386,6 +386,23 @@ label {
     margin-right: 5px;
 }
 
+.warningRevisar {
+    display: none;
+    margin-top: 10px;
+    padding: 5px;
+    background: #CB2F09;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.formularioEnviado {
+    display: none;
+    margin-top: 10px;
+    padding: 5px;
+    background: #095dcb;
+    text-align: center;
+    border-radius: 15px;
+}
 
 
 /* TABLET */
