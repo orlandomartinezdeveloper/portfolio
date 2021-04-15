@@ -178,7 +178,7 @@
             </div>
         </aside>
         <!-- Footer -->
-        <footer id="contato">
+        <footer id="contato" class="contatoFooter">
             <section class="contato">
                 <section class="textContact">
                     <h2>Contato</h2>
@@ -186,18 +186,20 @@
                     <p>Preencha o formulário e entrarei em contato o mais rápido possível.</p>
                     <p>Você também pode me encontrar nas seguintes redes sociais:</p>
                     <div class="redes-sociais">
-                        <a href="http://www.instagram.com/orlandomartinezdeveloper"><img src="img/instagram-logo.png" alt="instagram" class="instagram"></a>
-                        <a href="http://www.facebook.com/omjunior"><img src="img/facebook-logo.png" alt="facebook" class="facebook"></a>
+                        <a href="http://www.instagram.com/orlandomartinezdeveloper" target="_blank"><img src="img/instagram-logo.png" alt="instagram" class="instagram"></a>
+                        <a href="http://www.facebook.com/omjunior" target="_blank"><img src="img/facebook-logo.png" alt="facebook" class="facebook"></a>
                     </div>
                 </section>
-                <form action="#" method="post" class="formulario">
+                <form action="#" class="formulario">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name ="nome" placeholder="Escreva seu nome" >
+                    <input type="text" id="nome" name ="nome" placeholder="Escreva seu nome" required>
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name ="email" placeholder="Escreva seu email" >
+                    <input type="email" id="email" name ="email" placeholder="Escreva seu email" required>
                     <label for="email">Qual serviço precisa?</label>
-                    <textarea name="text" id="text" cols="30" rows="10" ></textarea>
-                    <div class="styleEnviar"><button type="submit" >ENVIAR</button></div>
+                    <textarea name="text" id="text" cols="30" rows="10" required></textarea>
+                    <div class="styleEnviar">
+                        <button id="buttonEnviar" type="submit" >ENVIAR</button>
+                    </div>
                     <p id="mensageNome"></p>
                 </form>
             </section>
