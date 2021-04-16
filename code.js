@@ -12,3 +12,4 @@ function validar() {
 		document.getElementById('mensagemEnviado').style.display = "block";
 	}
 }
+
