@@ -18,11 +18,11 @@
                 <input type="checkbox" name="check" id="check" class="checkbox">
                 <label for="check" class="hamburguer-btn"><span class="fas fa-bars"></span></label>              
                 <ul class="nav-list">
-                    <li><a href="#home" onclick = "fechar();" class="linkMenu">Home</a></li>
-                    <li><a href="#formacao" onclick = "fechar();" class="linkMenu">Formação</a></li>
-                    <li><a href="#experiencia" onclick = "fechar();" class="linkMenu">Experiência</a></li>
-                    <li><a href="#projetos" onclick = "fechar();" class="linkMenu">Projetos</a></li>
-                    <li><a href="#contato" onclick = "fechar();" class="linkMenu">Contato</a></li>
+                    <li><a href="#home" id= "linkHome" class="linkMenu" onclick = "fechar();">Home</a></li>
+                    <li><a href="#formacao" id="linkMenuForma" class="linkMenu" onclick = "fechar();">Formação</a></li>
+                    <li><a href="#experiencia" id="linkMenuExp" class="linkMenu" onclick = "fechar();">Experiência</a></li>
+                    <li><a href="#projetos" id="linkMenuPro" class="linkMenu" onclick = "fechar();">Projetos</a></li>
+                    <li><a href="#contato" id="linkContato" class="linkMenu" onclick = "fechar();">Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -51,7 +51,7 @@
                     </div>
                 </article>
             </section>
-            <section class="formacao" id="formacao">
+            <section class="formacao ancla" id="formacao">
                 <div class="sub-formacao">
                     <h2>Formação</h2>
                     <article class="estudos">
@@ -105,7 +105,7 @@
                     </article>
                 </div>       
             </section>
-            <section class="experiencia" id="experiencia">
+            <section class="experiencia ancla" id="experiencia">
                 <div class="sub-formacao">
                     <h2>Experiência</h2>
                     <article class="trabalhos">
@@ -152,7 +152,7 @@
             </section>
         </main>
         <!-- Aside -->
-        <aside id="projetos">
+        <aside id="projetos" class="ancla">
             <div class="sub-formacaoP">
                 <h2 class="projetoTitulo">Projetos</h2>
                 <section class="projetos">
