@@ -276,11 +276,13 @@ aside {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
+    margin-bottom: 15px;
     border-radius: 0px;
+
 }
 
 .fotoProjetoCada {
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .titleCada {
