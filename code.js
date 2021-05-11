@@ -54,7 +54,7 @@ function geralDoc() {
 		document.getElementById("check").checked = false;
 	}
 	// Abrir API github
-	fetch('https://api.github.com/users/orlandomartinezdeveloper/repos')
+	fetch(`https://api.github.com/users/orlandomartinezdeveloper/repos`)
 		.then(resp => resp.json())
 		.then(dados => {
 			for (let i = 0; i < 6; i++) {
